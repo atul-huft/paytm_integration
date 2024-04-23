@@ -1,0 +1,269 @@
+Caption : connect
+2024Mar21144652 :  displayTxnQr() :: method just called
+2024Mar21144652 :  displayTxnQr() arguments :: mid=[test5P07128923987041],portName=[COM4],baudRate=[115200],parity=[0],dataBits=[8],stopBits=[1],order_id=[OREDRID487824],order_amount=[111],qrcode_id=[upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10],currencySign=[null],debugMode=[1], posId=[POS-1]
+2024Mar21144652 :  displayTxnQr() :: order_amount : 111
+2024Mar21144652 :  connect() :: method just called
+2024Mar21144652 :  connect() :: serialPort.Dispose() called, closed the port and set it null in catch
+2024Mar21144652 :  connect() :: IOException : Error:
+The port 'COM4' does not exist.
+
+Stack Trace:
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Paytm.QrDisplay.connect(String mid, String portName, Int32 baudRate, Int32 parity, Int32 dataBits, Int32 stopBits, Int32 debugMode, String posId)
+
+Caption : createQrImage()
+2024Mar21144652 :  getPortNo() :: found : COM3
+2024Mar21144652 :  getPortNo() :: returning for connection  : [COM3]
+2024Mar21144652 :  connect() :: method just called
+2024Mar21144652 :  connect() :: serialPort.IsOpen has been opened now
+2024Mar21144652 :  connect() :: returning SerialPort: serialPort now
+2024Mar21144652 :  createQrImage() :: method just called
+2024Mar21144653 :  createQrImage() :: image name: C:\Users\atul.singh\Desktop\release dll 1.0.0.7 with Failed screen\images\transactions\qr.bmp
+
+Caption : disconnect()
+2024Mar21144653 :  displayTxnQr() :: currencyImg is not null and order_amount substring:  111
+2024Mar21144653 :  downloadImage() :: method just called
+2024Mar21144653 :  ConcatArrays() :: method just called
+2024Mar21144653 :  ClearBuffers() :: sp.DiscardInBuffer()
+2024Mar21144653 :  ClearBuffers() :: sp.DiscardOutBuffer()
+2024Mar21144654 :  downloadImage() :: sp.Write
+2024Mar21144654 :  displayTxnQr() :: file downloaded : True
+2024Mar21144654 :  disconnect() :: method just called
+2024Mar21144654 :  disconnect() :: serialPort.Close() finish
+2024Mar21144654 :  disconnect() :: serialPort.Dispose() finish
+
+Caption : displayQr()
+serialPort is now disconnected, retuning true from here
+Caption : connect
+2024Mar21144848 :  showHomeScreen() :: method just called
+2024Mar21144848 :  showHomeScreen() arguments :: mid=[TES202001281820506353958],portName=[COM4],baudRate=[115200],parity=[0],dataBits=[8],stopBits=[1],debugMode=[1], posId=[POS-1]
+2024Mar21144848 :  connect() :: method just called
+2024Mar21144848 :  connect() :: serialPort.Dispose() called, closed the port and set it null in catch
+2024Mar21144848 :  connect() :: IOException : Error:
+The port 'COM4' does not exist.
+
+Stack Trace:
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Paytm.QrDisplay.connect(String mid, String portName, Int32 baudRate, Int32 parity, Int32 dataBits, Int32 stopBits, Int32 debugMode, String posId)
+
+Caption : disconnect()
+2024Mar21144848 :  getPortNo() :: found : COM3
+2024Mar21144848 :  getPortNo() :: returning for connection  : [COM3]
+2024Mar21144848 :  connect() :: method just called
+2024Mar21144848 :  connect() :: serialPort.IsOpen has been opened now
+2024Mar21144848 :  connect() :: returning SerialPort: serialPort now
+2024Mar21144849 :  ConcatArrays() :: method just called
+2024Mar21144851 :  disconnect() :: method just called
+2024Mar21144851 :  disconnect() :: serialPort.Close() finish
+2024Mar21144851 :  disconnect() :: serialPort.Dispose() finish
+
+Caption : showHomeScreen()
+
+Caption : connect
+2024Mar21145811 :  displayTxnQr() :: method just called
+2024Mar21145811 :  displayTxnQr() arguments :: mid=[test5P07128923987041],portName=[COM4],baudRate=[115200],parity=[0],dataBits=[8],stopBits=[1],order_id=[OREDRID487824],order_amount=[111],qrcode_id=[upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10],currencySign=[null],debugMode=[1], posId=[POS-1]
+2024Mar21145811 :  displayTxnQr() :: order_amount : 111
+2024Mar21145811 :  connect() :: method just called
+2024Mar21145811 :  connect() :: serialPort.Dispose() called, closed the port and set it null in catch
+2024Mar21145811 :  connect() :: IOException : Error:
+The port 'COM4' does not exist.
+
+Stack Trace:
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Paytm.QrDisplay.connect(String mid, String portName, Int32 baudRate, Int32 parity, Int32 dataBits, Int32 stopBits, Int32 debugMode, String posId)
+
+Caption : createQrImage()
+2024Mar21145812 :  getPortNo() :: found : COM3
+2024Mar21145812 :  getPortNo() :: returning for connection  : [COM3]
+2024Mar21145812 :  connect() :: method just called
+2024Mar21145812 :  connect() :: serialPort.IsOpen has been opened now
+2024Mar21145812 :  connect() :: returning SerialPort: serialPort now
+2024Mar21145812 :  createQrImage() :: method just called
+2024Mar21145812 :  createQrImage() :: image name: C:\Users\atul.singh\Desktop\release dll 1.0.0.7 with Failed screen\images\transactions\qr.bmp
+
+Caption : disconnect()
+2024Mar21145812 :  displayTxnQr() :: currencyImg is not null and order_amount substring:  111
+2024Mar21145812 :  downloadImage() :: method just called
+2024Mar21145813 :  ConcatArrays() :: method just called
+2024Mar21145813 :  ClearBuffers() :: sp.DiscardInBuffer()
+2024Mar21145813 :  ClearBuffers() :: sp.DiscardOutBuffer()
+2024Mar21145814 :  downloadImage() :: sp.Write
+2024Mar21145814 :  displayTxnQr() :: file downloaded : True
+2024Mar21145814 :  disconnect() :: method just called
+2024Mar21145814 :  disconnect() :: serialPort.Close() finish
+2024Mar21145814 :  disconnect() :: serialPort.Dispose() finish
+
+Caption : displayQr()
+serialPort is now disconnected, retuning true from here
+Caption : connect
+2024Mar21162915 :  displayTxnQr() :: method just called
+2024Mar21162915 :  displayTxnQr() arguments :: mid=[test5P07128923987041],portName=[COM4],baudRate=[115200],parity=[0],dataBits=[8],stopBits=[1],order_id=[OREDRID487824],order_amount=[111],qrcode_id=[upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10],currencySign=[null],debugMode=[1], posId=[POS-1]
+2024Mar21162915 :  displayTxnQr() :: order_amount : 111
+2024Mar21162915 :  connect() :: method just called
+2024Mar21162915 :  connect() :: serialPort.Dispose() called, closed the port and set it null in catch
+2024Mar21162915 :  connect() :: IOException : Error:
+The port 'COM4' does not exist.
+
+Stack Trace:
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Paytm.QrDisplay.connect(String mid, String portName, Int32 baudRate, Int32 parity, Int32 dataBits, Int32 stopBits, Int32 debugMode, String posId)
+
+Caption : displayTxnQr()
+2024Mar21162915 :  getPortNo() :: returning for connection  : []
+2024Mar21162915 :  displayTxnQr() :: serialPort is null, returning false from here
+2024Mar21162915 :  displayTxnQr() :: Error:
+Device is not available
+
+Stack Trace:
+   at Paytm.QrDisplay.displayTxnQr(String mid, String portName, Int32 baudRate, Int32 parity, Int32 dataBits, Int32 stopBits, String order_id, String order_amount, String qrcode_id, String currencySign, Int32 debugMode, String posId)
+
+Caption : connect
+2024Mar21163759 :  displayTxnQr() :: method just called
+2024Mar21163759 :  displayTxnQr() arguments :: mid=[test5P07128923987041],portName=[COM4],baudRate=[115200],parity=[0],dataBits=[8],stopBits=[1],order_id=[OREDRID487824],order_amount=[111],qrcode_id=[upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10],currencySign=[null],debugMode=[1], posId=[POS-1]
+2024Mar21163759 :  displayTxnQr() :: order_amount : 111
+2024Mar21163759 :  connect() :: method just called
+2024Mar21163759 :  connect() :: serialPort.Dispose() called, closed the port and set it null in catch
+2024Mar21163759 :  connect() :: IOException : Error:
+The port 'COM4' does not exist.
+
+Stack Trace:
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Paytm.QrDisplay.connect(String mid, String portName, Int32 baudRate, Int32 parity, Int32 dataBits, Int32 stopBits, Int32 debugMode, String posId)
+
+Caption : createQrImage()
+2024Mar21163759 :  getPortNo() :: found : COM3
+2024Mar21163759 :  getPortNo() :: returning for connection  : [COM3]
+2024Mar21163759 :  connect() :: method just called
+2024Mar21163759 :  connect() :: serialPort.IsOpen has been opened now
+2024Mar21163759 :  connect() :: returning SerialPort: serialPort now
+2024Mar21163759 :  createQrImage() :: method just called
+2024Mar21163759 :  createQrImage() :: image name: C:\Users\atul.singh\Desktop\release dll 1.0.0.7 with Failed screen\images\transactions\qr.bmp
+
+Caption : disconnect()
+2024Mar21163759 :  displayTxnQr() :: currencyImg is not null and order_amount substring:  111
+2024Mar21163759 :  downloadImage() :: method just called
+2024Mar21163759 :  ConcatArrays() :: method just called
+2024Mar21163759 :  ClearBuffers() :: sp.DiscardInBuffer()
+2024Mar21163759 :  ClearBuffers() :: sp.DiscardOutBuffer()
+2024Mar21163801 :  downloadImage() :: sp.Write
+2024Mar21163801 :  displayTxnQr() :: file downloaded : True
+2024Mar21163801 :  disconnect() :: method just called
+2024Mar21163801 :  disconnect() :: serialPort.Close() finish
+2024Mar21163801 :  disconnect() :: serialPort.Dispose() finish
+
+Caption : displayQr()
+serialPort is now disconnected, retuning true from here
+Caption : connect
+2024Mar21163820 :  displayTxnQr() :: method just called
+2024Mar21163820 :  displayTxnQr() arguments :: mid=[test5P07128923987041],portName=[COM4],baudRate=[115200],parity=[0],dataBits=[8],stopBits=[1],order_id=[OREDRID487824],order_amount=[111],qrcode_id=[upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=101&cu=INR&paytmqr=29100505010110000029HR10],currencySign=[null],debugMode=[1], posId=[POS-1]
+2024Mar21163820 :  displayTxnQr() :: order_amount : 111
+2024Mar21163820 :  connect() :: method just called
+2024Mar21163820 :  connect() :: serialPort.Dispose() called, closed the port and set it null in catch
+2024Mar21163820 :  connect() :: IOException : Error:
+The port 'COM4' does not exist.
+
+Stack Trace:
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Paytm.QrDisplay.connect(String mid, String portName, Int32 baudRate, Int32 parity, Int32 dataBits, Int32 stopBits, Int32 debugMode, String posId)
+
+Caption : createQrImage()
+2024Mar21163820 :  getPortNo() :: found : COM3
+2024Mar21163820 :  getPortNo() :: returning for connection  : [COM3]
+2024Mar21163820 :  connect() :: method just called
+2024Mar21163820 :  connect() :: serialPort.IsOpen has been opened now
+2024Mar21163820 :  connect() :: returning SerialPort: serialPort now
+2024Mar21163820 :  createQrImage() :: method just called
+2024Mar21163820 :  createQrImage() :: image name: C:\Users\atul.singh\Desktop\release dll 1.0.0.7 with Failed screen\images\transactions\qr.bmp
+
+Caption : disconnect()
+2024Mar21163820 :  displayTxnQr() :: currencyImg is not null and order_amount substring:  111
+2024Mar21163820 :  downloadImage() :: method just called
+2024Mar21163821 :  ConcatArrays() :: method just called
+2024Mar21163821 :  ClearBuffers() :: sp.DiscardInBuffer()
+2024Mar21163821 :  ClearBuffers() :: sp.DiscardOutBuffer()
+2024Mar21163822 :  downloadImage() :: sp.Write
+2024Mar21163822 :  displayTxnQr() :: file downloaded : True
+2024Mar21163822 :  disconnect() :: method just called
+2024Mar21163822 :  disconnect() :: serialPort.Close() finish
+2024Mar21163822 :  disconnect() :: serialPort.Dispose() finish
+
+Caption : displayQr()
+serialPort is now disconnected, retuning true from here
+Caption : connect
+2024Mar21163847 :  displayTxnQr() :: method just called
+2024Mar21163847 :  displayTxnQr() arguments :: mid=[test5P07128923987041],portName=[COM4],baudRate=[115200],parity=[0],dataBits=[8],stopBits=[1],order_id=[OREDRID487824],order_amount=[101],qrcode_id=[upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=101&cu=INR&paytmqr=29100505010110000029HR10],currencySign=[null],debugMode=[1], posId=[POS-1]
+2024Mar21163847 :  displayTxnQr() :: order_amount : 101
+2024Mar21163847 :  connect() :: method just called
+2024Mar21163847 :  connect() :: serialPort.Dispose() called, closed the port and set it null in catch
+2024Mar21163847 :  connect() :: IOException : Error:
+The port 'COM4' does not exist.
+
+Stack Trace:
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Paytm.QrDisplay.connect(String mid, String portName, Int32 baudRate, Int32 parity, Int32 dataBits, Int32 stopBits, Int32 debugMode, String posId)
+
+Caption : createQrImage()
+2024Mar21163847 :  getPortNo() :: found : COM3
+2024Mar21163847 :  getPortNo() :: returning for connection  : [COM3]
+2024Mar21163847 :  connect() :: method just called
+2024Mar21163847 :  connect() :: serialPort.IsOpen has been opened now
+2024Mar21163847 :  connect() :: returning SerialPort: serialPort now
+2024Mar21163847 :  createQrImage() :: method just called
+2024Mar21163847 :  createQrImage() :: image name: C:\Users\atul.singh\Desktop\release dll 1.0.0.7 with Failed screen\images\transactions\qr.bmp
+
+Caption : disconnect()
+2024Mar21163847 :  displayTxnQr() :: currencyImg is not null and order_amount substring:  101
+2024Mar21163848 :  downloadImage() :: method just called
+2024Mar21163848 :  ConcatArrays() :: method just called
+2024Mar21163848 :  ClearBuffers() :: sp.DiscardInBuffer()
+2024Mar21163848 :  ClearBuffers() :: sp.DiscardOutBuffer()
+2024Mar21163849 :  downloadImage() :: sp.Write
+2024Mar21163849 :  displayTxnQr() :: file downloaded : True
+2024Mar21163849 :  disconnect() :: method just called
+2024Mar21163849 :  disconnect() :: serialPort.Close() finish
+2024Mar21163849 :  disconnect() :: serialPort.Dispose() finish
+
+Caption : displayQr()
+serialPort is now disconnected, retuning true from here
+Caption : displayQr()
+serialPort is now disconnected, retuning true from here
+Caption : connect
+2024Mar28014018 :  displayTxnQr() :: method just called
+2024Mar28014018 :  displayTxnQr() arguments :: mid=[test5P07128923987041],portName=[COM4],baudRate=[115200],parity=[0],dataBits=[8],stopBits=[1],order_id=[order123],order_amount=[123],qrcode_id=[None],currencySign=[null],debugMode=[1], posId=[POS-1]
+2024Mar28014018 :  displayTxnQr() :: order_amount : 123
+2024Mar28014018 :  connect() :: method just called
+2024Mar28014018 :  connect() :: serialPort.Dispose() called, closed the port and set it null in catch
+2024Mar28014018 :  connect() :: IOException : Error:
+The port 'COM4' does not exist.
+
+Stack Trace:
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Paytm.QrDisplay.connect(String mid, String portName, Int32 baudRate, Int32 parity, Int32 dataBits, Int32 stopBits, Int32 debugMode, String posId)
+
+Caption : displayTxnQr()
+2024Mar28014018 :  getPortNo() :: returning for connection  : []
+2024Mar28014018 :  displayTxnQr() :: serialPort is null, returning false from here
+2024Mar28014018 :  displayTxnQr() :: Error:
+Device is not available
+
+Stack Trace:
+   at Paytm.QrDisplay.displayTxnQr(String mid, String portName, Int32 baudRate, Int32 parity, Int32 dataBits, Int32 stopBits, String order_id, String order_amount, String qrcode_id, String currencySign, Int32 debugMode, String posId)
+
+Caption : displayQr()
+serialPort is now disconnected, retuning true from here

@@ -1,0 +1,144 @@
+Caption : Main Function
+2024Mar21144650 :  Main() :: method just called with URI : paytmpayments:?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=111;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+
+Caption : GetHandler
+2024Mar21144650 :  GetHandler() :: Method just called
+2024Mar21144650 :  GetHandler() :: connecting to IPC channel to check for remote Method Invoker
+2024Mar21144650 :  GetHandler() :: Exception Error:
+Failed to connect to an IPC Port: The system cannot find the file specified.
+ 
+
+Stack Trace:
+
+Server stack trace: 
+   at System.Runtime.Remoting.Channels.Ipc.IpcPort.Connect(String portName, Boolean secure, TokenImpersonationLevel impersonationLevel, Int32 timeout)
+   at System.Runtime.Remoting.Channels.Ipc.ConnectionCache.GetConnection(String portName, Boolean secure, TokenImpersonationLevel level, Int32 timeout)
+   at System.Runtime.Remoting.Channels.Ipc.IpcClientTransportSink.ProcessMessage(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream, ITransportHeaders& responseHeaders, Stream& responseStream)
+   at System.Runtime.Remoting.Channels.BinaryClientFormatterSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at System.Object.ToString()
+   at PaytmPayments.MethodInvoker.GetHandler(Int32 debugMode)
+
+Caption : Register
+2024Mar21144650 :  Register() :: Registering the Method Invoker in the singular instance of the application
+2024Mar21144650 :  Register() :: Registered successfully, returning true from here
+
+Caption : HandleUri
+2024Mar21144652 :  HandleUri() :: Method just called
+2024Mar21144652 :  ParseQueryString() :: query string extracted from the URI is : ?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=111;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+2024Mar21144654 :  method called according to request :: displayTxnQr
+
+Caption : Main Function
+2024Mar21144848 :  Main() :: method just called with URI : paytmpayments:?requestId=123;method=showHomeScreen;mid=TES202001281820506353958;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;debugMode=1;posid=POS-1
+
+Caption : GetHandler
+2024Mar21144848 :  GetHandler() :: Method just called
+2024Mar21144848 :  GetHandler() :: connecting to IPC channel to check for remote Method Invoker
+2024Mar21144848 :  GetHandler() :: returning remote Method Invoker object
+
+Caption : HandleUri
+2024Mar21144848 :  HandleUri() :: Method just called
+2024Mar21144848 :  ParseQueryString() :: query string extracted from the URI is : ?requestId=123;method=showHomeScreen;mid=TES202001281820506353958;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;debugMode=1;posid=POS-1
+2024Mar21144851 :  method called according to request :: showHomeScreen
+
+Caption : Main Function
+2024Mar21145811 :  Main() :: method just called with URI : paytmpayments:?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=111;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+
+Caption : GetHandler
+2024Mar21145811 :  GetHandler() :: Method just called
+2024Mar21145811 :  GetHandler() :: connecting to IPC channel to check for remote Method Invoker
+2024Mar21145811 :  GetHandler() :: returning remote Method Invoker object
+
+Caption : HandleUri
+2024Mar21145811 :  HandleUri() :: Method just called
+2024Mar21145811 :  ParseQueryString() :: query string extracted from the URI is : ?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=111;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+2024Mar21145814 :  method called according to request :: displayTxnQr
+
+Caption : Main Function
+2024Mar21162915 :  Main() :: method just called with URI : paytmpayments:?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=111;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+
+Caption : GetHandler
+2024Mar21162915 :  GetHandler() :: Method just called
+2024Mar21162915 :  GetHandler() :: connecting to IPC channel to check for remote Method Invoker
+2024Mar21162915 :  GetHandler() :: returning remote Method Invoker object
+
+Caption : Main Function
+2024Mar21163759 :  Main() :: method just called with URI : paytmpayments:?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=111;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+
+Caption : GetHandler
+2024Mar21163759 :  GetHandler() :: Method just called
+2024Mar21163759 :  GetHandler() :: connecting to IPC channel to check for remote Method Invoker
+2024Mar21163759 :  GetHandler() :: returning remote Method Invoker object
+
+Caption : HandleUri
+2024Mar21162915 :  HandleUri() :: Method just called
+2024Mar21162915 :  ParseQueryString() :: query string extracted from the URI is : ?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=111;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+2024Mar21163759 :  HandleUri() :: Method just called
+2024Mar21163759 :  ParseQueryString() :: query string extracted from the URI is : ?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=111;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=111&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+2024Mar21163801 :  method called according to request :: displayTxnQr
+
+Caption : Main Function
+2024Mar21163820 :  Main() :: method just called with URI : paytmpayments:?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=111;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=101&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+
+Caption : GetHandler
+2024Mar21163820 :  GetHandler() :: Method just called
+2024Mar21163820 :  GetHandler() :: connecting to IPC channel to check for remote Method Invoker
+2024Mar21163820 :  GetHandler() :: returning remote Method Invoker object
+
+Caption : HandleUri
+2024Mar21163820 :  HandleUri() :: Method just called
+2024Mar21163820 :  ParseQueryString() :: query string extracted from the URI is : ?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=111;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=101&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+2024Mar21163822 :  method called according to request :: displayTxnQr
+
+Caption : Main Function
+2024Mar21163847 :  Main() :: method just called with URI : paytmpayments:?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=101;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=101&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+
+Caption : GetHandler
+2024Mar21163847 :  GetHandler() :: Method just called
+2024Mar21163847 :  GetHandler() :: connecting to IPC channel to check for remote Method Invoker
+2024Mar21163847 :  GetHandler() :: returning remote Method Invoker object
+
+Caption : HandleUri
+2024Mar21163847 :  HandleUri() :: Method just called
+2024Mar21163847 :  ParseQueryString() :: query string extracted from the URI is : ?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=OREDRID487824;order_amount=101;qrcode_id=upi://pay?pa=paytm-68624241@paytm&pn=test5&mc=5137&tr=OREDRID487824&am=101&cu=INR&paytmqr=29100505010110000029HR10;currencySign=null;debugMode=1;posid=POS-1
+2024Mar21163849 :  method called according to request :: displayTxnQr
+
+Caption : HandleUri
+2024Mar21164006 :  method called according to request :: displayTxnQr
+
+Caption : Main Function
+2024Mar28014017 :  Main() :: method just called with URI : paytmpayments:?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=order123;order_amount=123;qrcode_id=None;currencySign=null;debugMode=1;posid=POS-1
+
+Caption : GetHandler
+2024Mar28014017 :  GetHandler() :: Method just called
+2024Mar28014017 :  GetHandler() :: connecting to IPC channel to check for remote Method Invoker
+2024Mar28014017 :  GetHandler() :: Exception Error:
+Failed to connect to an IPC Port: The system cannot find the file specified.
+ 
+
+Stack Trace:
+
+Server stack trace: 
+   at System.Runtime.Remoting.Channels.Ipc.IpcPort.Connect(String portName, Boolean secure, TokenImpersonationLevel impersonationLevel, Int32 timeout)
+   at System.Runtime.Remoting.Channels.Ipc.ConnectionCache.GetConnection(String portName, Boolean secure, TokenImpersonationLevel level, Int32 timeout)
+   at System.Runtime.Remoting.Channels.Ipc.IpcClientTransportSink.ProcessMessage(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream, ITransportHeaders& responseHeaders, Stream& responseStream)
+   at System.Runtime.Remoting.Channels.BinaryClientFormatterSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at System.Object.ToString()
+   at PaytmPayments.MethodInvoker.GetHandler(Int32 debugMode)
+
+Caption : Register
+2024Mar28014017 :  Register() :: Registering the Method Invoker in the singular instance of the application
+2024Mar28014017 :  Register() :: Registered successfully, returning true from here
+
+Caption : HandleUri
+2024Mar28014018 :  HandleUri() :: Method just called
+2024Mar28014018 :  ParseQueryString() :: query string extracted from the URI is : ?requestId=123;method=displayTxnQr;mid=test5P07128923987041;portName=COM4;baudRate=115200;parity=0;dataBits=8;stopBits=1;order_id=order123;order_amount=123;qrcode_id=None;currencySign=null;debugMode=1;posid=POS-1
+2024Mar28014021 :  method called according to request :: displayTxnQr
+

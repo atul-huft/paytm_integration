@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <h1>Generate QR Code</h1>
+    <form id="qrForm" action="/generate_qr" method="POST">
+
+        <label for="orderId">Order ID:</label>
+        <input type="text" id="orderId" name="orderId" required><br><br>
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" name="amount" required><br><br>
+        <input type="submit" value="Generate QR Code">
+    </form>
+    <div id="qrCodeContainer"></div>
+
+    <script>
+        document.getElementById("qrForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            generateQRCode();
+        });
+        function generateQRCode() {
+            var orderId = document.getElementById("orderId").value;
+            var amount = document.getElementById("amount").value;
+
+            var formData = new FormData();
+            formData.append('orderId', orderId);
+            formData.append('amount', amount);
+
+            fetch('/generate_qr', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);  // Check response from server
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
